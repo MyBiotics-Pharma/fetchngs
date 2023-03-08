@@ -221,7 +221,7 @@ class DatabaseResolver:
         if prefix in cls._GEO_PREFIXES:
             return cls._gse_to_srx(identifier)
         elif prefix in cls._SRA_PREFIXES:
-            return cls._id_to_srx(identifier)
+            return cls._id_to_erx(identifier)
         elif prefix in cls._ENA_PREFIXES:
             return cls._id_to_erx(identifier)
         else:
